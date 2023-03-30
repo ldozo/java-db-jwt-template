@@ -1,0 +1,21 @@
+POST http://localhost:8080/user/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "kenan@enginaar.com",
+    "password": "1234"
+}
+###
+POST http://localhost:8080/user/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "kenan@enginaar.com",
+    "password": "1234"
+}
+###
+GET http://localhost:8080/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzY29wZXMiOltdLCJzdWIiOiJrZW5hbkBlbmdpbmFhci5jb20iLCJqdGkiOiIxIiwiaWF0IjoxNjgwMjEwOTY0LCJleHAiOjE2ODAyOTczNjR9.Aq8hjuovhv3TUZJeVqxMOkE-5OTOyWL4hDXFO2rcauI
+###
+GET http://localhost:8080/user/secured
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzY29wZXMiOltdLCJzdWIiOiJrZW5hbkBlbmdpbmFhci5jb20iLCJqdGkiOiIxIiwiaWF0IjoxNjgwMjEwOTY0LCJleHAiOjE2ODAyOTczNjR9.Aq8hjuovhv3TUZJeVqxMOkE-5OTOyWL4hDXFO2rcauI
